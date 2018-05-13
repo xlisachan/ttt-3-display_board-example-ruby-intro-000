@@ -1,13 +1,8 @@
 # Define a method display_board that prints a 3x3 Tic Tac Toe Board
-row = 1.times { put "   |   |  " }
-divider = 11.times { print "-" }
+ttt_board = ["   |   |   ", "-----------","   |   |   ", "-----------","   |   |   "]
 
 def display_board
-  puts row + /n
-  puts divider + /n
-  puts row + /n
-  puts divider + /n
-  puts row + /n
+  ttt_board.each { |x| puts "#{{x}} \n"}
 end
 
 display_board
